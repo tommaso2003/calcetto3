@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trova il Decimo per Calcetto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trova il Decimo per Calcetto</h1>
+        <p>Unisciti alla partita di calcetto! Aggiungi il tuo nome e aspetta che arriviamo a 10!</p>
+        
+        <div class="form-container">
+            <input type="text" id="playerName" placeholder="Inserisci il tuo nome">
+            <button id="addPlayerButton">Aggiungi al gruppo</button>
+        </div>
+        
+        <div class="players-list">
+            <h2>Giocatori:</h2>
+            <ul id="playersList"></ul>
+        </div>
+        
+        <div class="status">
+            <h3 id="statusMessage">Stato: In attesa di 10 giocatori...</h3>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
